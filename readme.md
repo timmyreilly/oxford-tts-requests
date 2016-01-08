@@ -1,3 +1,2 @@
-This is miminum code required for an Azure Flask project deployment. 
+Here's an example of working with the Project Oxford TTS service using Flask, Python 2.7, and Requests!
 
-Check out my [blog post](http://timmyreilly.azurewebsites.net/starter-site-for-flask-on-azure-web-apps/) if you have any other questions. 
