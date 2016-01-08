@@ -1,4 +1,4 @@
-from tokens import * # add your own tokens file or remove this line and uncomment line 6
+from tokens import OXFORD_SPEECH_API # add your own tokens file or remove this line and uncomment line 6
 import requests 
 import json 
 import base64
@@ -31,6 +31,7 @@ TTS_HEADERS = {"Content-type": "application/ssml+xml",
 TTS_URL = TTSHOST + "/synthesize"
 
 def get_raw_wav(text="hello world"):
+    print 'getting wav' 
     body = "<speak version='1.0' xml:lang='en-us'><voice xml:lang='en-us' xml:gender='Female' name='Microsoft Server Speech Text to Speech Voice (en-US, ZiraRUS)'>" + text + "</voice></speak>"
     r = requests.post(TTS_URL, headers=TTS_HEADERS, data=body)
     print "TTS Status Code: " + str(r.status_code) 

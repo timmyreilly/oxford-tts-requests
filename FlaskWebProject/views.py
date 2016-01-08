@@ -3,7 +3,7 @@ Routes and views for the flask application.
 """
 
 from datetime import datetime
-from flask import render_template
+from flask import Flask, render_template, request 
 from FlaskWebProject import app
 from tts import get_raw_wav
 
